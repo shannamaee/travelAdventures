@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Match the Number Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      padding: 50px;
+    }
+
+    .game-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .score {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+    /* Navigation bar styles */
+    .topnav {
+      background-color: #333;
+      padding: 12px 24px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: -50px -50px 30px -50px;
+    }
+
+    .topnav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .topnav a:hover {
+      color: #f0c080;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="topnav">
+    <a href="index.html">← Home</a>
+    <a href="fromScratch.html">← My Travel Page</a>
+  </div>
+
+  <div class="game-box">
+    <h1>Match the Number</h1>
+    <p>Pick a number between 1 and 10</p>
+
+    <input type="number" id="userGuess" min="1" max="10">
+    <br>
+    <button onclick="playRound()">Submit Guess</button>
+
+    <div class="result" id="result"></div>
+
+    <div class="score">
+      Your Score: <span id="userScore">0</span>
+    </div>
+
+    <button onclick="resetGame()">Reset Game</button>
+  </div>
+
+  <script>
+    let userScore = 0;
+
+    function playRound() {
+      const input = document.getElementById("userGuess");
+      const resultText = document.getElementById("result");
+
+      let userNumber = Number(input.value);
+
+      if (userNumber < 1 || userNumber > 10 || isNaN(userNumber)) {
+        resultText.innerHTML = "Enter a number between 1 and 10.";
+        return;
+      }
+
+      let compNumber = Math.floor(Math.random() * 10) + 1;
+
+      let message = `You picked ${userNumber}, Computer picked ${compNumber}.<br>`;
+
+      if (userNumber === compNumber) {
+        userScore++;
+        message += "🎉 Match! You get a point!";
+      } else {
+        message += "No match. Try again!";
+      }
+
+      document.getElementById("userScore").innerText = userScore;
+      resultText.innerHTML = message;
+
+      if (userScore === 5) {
+        resultText.innerHTML += "<br><strong>You win the game! 🎉</strong>";
+        document.getElementById("userGuess").disabled = true;
+      }
+
+      input.value = "";
+    }
+
+    function resetGame() {
+      userScore = 0;
+      document.getElementById("userScore").innerText = 0;
+      document.getElementById("result").innerHTML = "";
+      document.getElementById("userGuess").disabled = false;
+      document.getElementById("userGuess").value = "";
+    }
+  </script>
+
+</body>
+</html>

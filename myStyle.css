@@ -1,0 +1,203 @@
+/* =============================================
+   myStyle.css — Shanna Robertson Travel Page
+   ============================================= */
+
+/* FONT FAMILY & BASE */
+body{
+  font-family: 'Georgia', serif;
+  background-color:pink;
+  color: #3b2a1a;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV DIV */
+#topnav {
+  background-color: #6b3f1f;
+  padding: 12px 24px;
+  display: flex;
+  gap: 20px;
+}
+
+#topnav a {
+  color: #f5ede0;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topnav a:hover {
+  color: #f0c080;
+  text-decoration: underline;
+}
+
+/* HEADER DIV */
+#main-header {
+  background-color: #8b5030;
+  background-image: url('home-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#main-header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3.5em;
+  margin: 0 0 10px 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+#main-header p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  color: #fde9c9;
+  margin: 0;
+  font-style: italic;
+}
+
+/* CONTENT SECTIONS DIV */
+.content-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #fffaf4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.content-section h2 {
+  font-family: 'Georgia', serif;
+  color: #6b3f1f;
+  border-bottom: 2px solid #d4956a;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+.content-section p {
+  font-family: 'Arial', sans-serif;
+  color: #3b2a1a;
+  line-height: 1.8;
+}
+
+/* TRAVEL PHOTO */
+.travel-photo {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 6px;
+  display: block;
+  margin: 16px auto;
+  border: 4px solid #d4956a;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  color: #7a5c3e;
+  font-size: 0.9em;
+}
+
+/* NESTED LISTS */
+.destination-list {
+  line-height: 2;
+  font-family: 'Arial', sans-serif;
+  color: #3b2a1a;
+}
+
+.destination-list > li {
+  margin-bottom: 12px;
+}
+
+.destination-list ol {
+  color: #6b3f1f;
+}
+
+/* VIDEO WRAPPER DIV */
+.video-wrapper {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.video-wrapper iframe {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 4px solid #d4956a;
+}
+
+/* TABLEAU PLACEHOLDER */
+.tableau-placeholder {
+  margin: 16px 0;
+}
+
+.placeholder-box {
+  background-color: #f0dcc0;
+  border: 2px dashed #b07840;
+  border-radius: 6px;
+  padding: 60px 20px;
+  text-align: center;
+  color: #7a5c3e;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+}
+
+/* BUTTONS */
+.cta-button {
+  display: inline-block;
+  background-color: #8b5030;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+  background-color: #6b3f1f;
+  color: #f5ede0;
+}
+
+.back-to-top {
+  display: inline-block;
+  color: #8b5030;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95em;
+  text-decoration: none;
+  border: 2px solid #8b5030;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.back-to-top:hover {
+  background-color: #8b5030;
+  color: #fff;
+}
+
+/* CENTER UTILITY */
+.center {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: #6b3f1f;
+  color: #f5ede0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #f0c080;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

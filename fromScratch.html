@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Adventures</title>
+  <link rel="stylesheet" href="css/myStyle.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION back to main site -->
+  <nav id="topnav">
+    <a href="index.html">← Back to Main Site</a>
+    <a href="ai.html">🎮 Play My Number Game</a>
+  </nav>
+
+  <!-- ON-PAGE ANCHOR target at the very top -->
+  <a id="top"></a>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <h1>My Adventures</h1>
+    <p>Collecting memories one destination at a time</p>
+  </header>
+
+  <!-- ABOUT MY TRAVELS -->
+  <div class="content-section">
+    <h2>Why I Travel</h2>
+    <p>
+      Travel has always been my way of stepping outside the ordinary. Whether it's a road trip
+      through the American Southwest or exploring cobblestone streets abroad, every journey
+      teaches me something new about the world — and myself.
+    </p>
+  </div>
+
+  <!-- IMAGE (not from Bootstrap theme) -->
+  <div class="content-section">
+    <h2>A Favorite View</h2>
+<img src="assets/img/provo.png" alt="View of the mountains in Provo, Utah" class="travel-photo" style="width: 80%; display: block; margin: 16px auto;" />    <p class="caption">The stunning east coast sunset — right outside my house in Virginia.</p>
+  </div>
+
+  <!-- NESTED LISTS -->
+  <div class="content-section">
+    <h2>Places I've Been</h2>
+    <p>Here's a breakdown of some of my favorite destinations:</p>
+    <ul class="destination-list">
+      <li>
+        <strong>United States</strong>
+        <ol>
+          <li>Virginia — home base and always beautiful</li>
+          <li>New York City — the city that never sleeps</li>
+          <li>Hawaii — beaches and good vibes</li>
+          <li>Alaska — beautiful and different</li>
+        </ol>
+      </li>
+      <li>
+        <strong>International</strong>
+        <ol>
+          <li>Bahamas — beaches and turquoise water</li>
+          <li>Japan — amazing culture</li>
+          <li>Germany — gorgeous mountains</li>
+        </ol>
+      </li>
+      <li>
+        <strong>On My Bucket List</strong>
+        <ol>
+          <li>Australia</li>
+          <li>New Zealand</li>
+          <li>Netherlands</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+
+  <!-- EMBEDDED YOUTUBE VIDEO -->
+  <div class="content-section">
+    <h2>Travel Inspiration</h2>
+    <p>This video captures exactly why I love exploring new places:</p>
+    <div class="video-wrapper">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/pZ7WLQbLDn8"
+        title="Travel inspiration video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- TABLEAU EMBED -->
+  <div class="content-section">
+    <h2>Travel Stats</h2>
+    <p>An interactive look at travel data from around the world:</p>
+    <div class="tableau-placeholder">
+        <div class='tableauPlaceholder' id='viz1776123087619' style='position: relative'>
+            <noscript><a href='#'>
+                <img alt='End of Year Overview' src='https://public.tableau.com/static/images/En/EndOfYearOverview/EndofYearOverview/1_rss.png' style='border: none' />
+            </a></noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='EndOfYearOverview/EndofYearOverview' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/En/EndOfYearOverview/EndofYearOverview/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1776123087619');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='900px';vizElement.style.height='600px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='900px';vizElement.style.height='600px';} else { vizElement.style.width='100%';vizElement.style.height='600px';}
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP ANCHOR LINK -->
+  <div class="content-section center">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+
+  <!-- AI APP LINK -->
+  <div class="content-section center">
+    <h2>Want to Play a Game?</h2>
+    <p>Check out the number-matching game I built with AI:</p>
+    <a href="ai.html" class="cta-button">Play the Number Game</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 Shanna Robertson &nbsp;|&nbsp; <a href="index.html">Main Site</a></p>
+  </footer>
+
+</body>
+</html>
